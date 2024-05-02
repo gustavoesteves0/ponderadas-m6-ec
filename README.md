@@ -21,3 +21,30 @@ Aqui, o codigo tem a funcao de definir o formato do desenho, definindo primeiro 
 Aqui eh criado o codigo para excluir a tartaruga.
 ![image](https://github.com/gustavoesteves0/ponderadas-m6-ec/assets/123904558/f23e3289-e9e7-44a0-88bc-ede3537ab651)
 Por fim, aqui eh definida a funcao main, que eh responsavel por rodar todo o codigo.
+## Utilizacao da solucao
+Apos realizar toda a instalcao do pacote ROS, o usuario deve realizar o seguinte passo a passo para a utilizacao do codigo:
+### Primeiro passo:
+No primeiro passo, o usuario deve entrar no diretorio meu_workspace utilizando o seguinte comando:
+```
+cd ponderada-1/meu_workspace
+```
+### Segundo passo:
+Em segundo lugar, eh necessario fazer a construcao do pacote. Para isso, eh possivel utilizar o comando:
+```
+colcon build
+```
+### Terceiro passo:
+Apos a construcao do pacote, eh necessario executar o comando:
+```
+source install/local_setup.bash
+```
+### Quarto passo:
+Deve-se, entao, abrir outro terminal e executar o comando para abrir o turtlesim:
+```
+ros2 run turtlesim turtlesim_node
+```
+### Quinto passo:
+Por fim, para rodar o codigo, eh necessario executar o seguinte comando:
+```
+ros2 run ponderada_gustavo pond_gu
+```

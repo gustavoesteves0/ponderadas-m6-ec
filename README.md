@@ -8,7 +8,7 @@ O turtlesim vai primeiro desenhar um triângulo, em seguida um círculo e por fi
 ## Workspace
 ![image](https://github.com/gustavoesteves0/ponderadas-m6-ec/assets/123904558/61ab0cb4-88b3-4757-a506-71429534687a)  
 Acima está a demonstração do workspace, de acordo com os padrões do ROS2. 
-## Codigo
+## Código
 ![image](https://github.com/gustavoesteves0/ponderadas-m6-ec/assets/123904558/87a64d79-4911-45b4-8fc9-9d67514315b5)
 O código acima tem a função de definir as configurações do ambiente e as dependências necessárias para controlar o movimento e as ações da tartaruga virtual no ambiente de simulação.
 ![image](https://github.com/gustavoesteves0/ponderadas-m6-ec/assets/123904558/129f2cc6-e1d6-4f1f-a0c8-b9f08e1d6311)  
@@ -21,7 +21,7 @@ Aqui, o código tem a função de definir o formato do desenho, definindo primei
 Aqui é criado o código para excluir a tartaruga.  
 ![image](https://github.com/gustavoesteves0/ponderadas-m6-ec/assets/123904558/f23e3289-e9e7-44a0-88bc-ede3537ab651)
 Por fim, aqui é definida a função main, que é responsável por rodar todo o código.
-## Utilizacao da solucao
+## Utilização da solução
 Após realizar toda a instalação do pacote ROS, o usuário deve realizar o seguinte passo a passo para a utilização do código:
 ### Primeiro passo:
 No primeiro passo, o usuário deve entrar no diretório meu_workspace utilizando o seguinte comando:

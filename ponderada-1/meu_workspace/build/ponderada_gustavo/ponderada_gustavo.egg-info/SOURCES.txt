@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/PKG-INFO
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/dependency_links.txt
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/entry_points.txt
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/requires.txt
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/top_level.txt
+../../build/ponderada_gustavo/ponderada_gustavo.egg-info/zip-safe
+ponderada_gustavo/__init__.py
+ponderada_gustavo/pond_gu.py
+resource/ponderada_gustavo
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

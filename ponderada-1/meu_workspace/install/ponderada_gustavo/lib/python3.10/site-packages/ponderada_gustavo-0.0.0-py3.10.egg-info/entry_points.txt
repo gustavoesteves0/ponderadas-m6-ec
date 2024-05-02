@@ -1,0 +1,3 @@
+[console_scripts]
+pond_gu = ponderada_gustavo.pond_gu:main
+

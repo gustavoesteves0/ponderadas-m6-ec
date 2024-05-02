@@ -1,0 +1,24 @@
+[0.475s] Invoking command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/src/ponderada_gustavo': PYTHONPATH=/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/prefix_override:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ponderada_gustavo build --build-base /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build install --record /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/install.log --single-version-externally-managed install_data
+[0.661s] running egg_info
+[0.662s] writing ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/PKG-INFO
+[0.662s] writing dependency_links to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/dependency_links.txt
+[0.662s] writing entry points to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/entry_points.txt
+[0.663s] writing requirements to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/requires.txt
+[0.663s] writing top-level names to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/top_level.txt
+[0.665s] reading manifest file '../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt'
+[0.667s] writing manifest file '../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt'
+[0.667s] running build
+[0.667s] running build_py
+[0.667s] copying ponderada_gustavo/pond_gu.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo
+[0.667s] running install
+[0.667s] running install_lib
+[0.668s] copying /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo/pond_gu.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo
+[0.669s] byte-compiling /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo/pond_gu.py to pond_gu.cpython-310.pyc
+[0.670s] running install_data
+[0.670s] running install_egg_info
+[0.672s] removing '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.672s] Copying ../../build/ponderada_gustavo/ponderada_gustavo.egg-info to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo-0.0.0-py3.10.egg-info
+[0.673s] running install_scripts
+[0.691s] Installing pond_gu script to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/ponderada_gustavo
+[0.691s] writing list of installed files to '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/install.log'
+[0.714s] Invoked command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/src/ponderada_gustavo' returned '0': PYTHONPATH=/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/prefix_override:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ponderada_gustavo build --build-base /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build install --record /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/install.log --single-version-externally-managed install_data

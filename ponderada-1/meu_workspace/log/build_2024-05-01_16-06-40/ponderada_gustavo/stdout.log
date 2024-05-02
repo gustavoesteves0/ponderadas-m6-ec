@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing ponderada_gustavo.egg-info/PKG-INFO
+writing dependency_links to ponderada_gustavo.egg-info/dependency_links.txt
+writing entry points to ponderada_gustavo.egg-info/entry_points.txt
+writing requirements to ponderada_gustavo.egg-info/requires.txt
+writing top-level names to ponderada_gustavo.egg-info/top_level.txt
+reading manifest file 'ponderada_gustavo.egg-info/SOURCES.txt'
+writing manifest file 'ponderada_gustavo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada-gustavo.egg-link (link to .)
+Installing ponderada_gustavo script to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/ponderada_gustavo
+
+Installed /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo
+running symlink_data
+symbolically linking /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/resource/ponderada_gustavo -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index/resource_index/packages
+symbolically linking /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/package.xml -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ponderada_gustavo

@@ -1,0 +1,19 @@
+[0.443s] Invoking command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo': PYTHONPATH=/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/prefix_override:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build --no-deps symlink_data --force
+[0.640s] running develop
+[0.746s] running egg_info
+[0.746s] writing ponderada_gustavo.egg-info/PKG-INFO
+[0.746s] writing dependency_links to ponderada_gustavo.egg-info/dependency_links.txt
+[0.746s] writing entry points to ponderada_gustavo.egg-info/entry_points.txt
+[0.746s] writing requirements to ponderada_gustavo.egg-info/requires.txt
+[0.746s] writing top-level names to ponderada_gustavo.egg-info/top_level.txt
+[0.747s] reading manifest file 'ponderada_gustavo.egg-info/SOURCES.txt'
+[0.748s] writing manifest file 'ponderada_gustavo.egg-info/SOURCES.txt'
+[0.749s] running build_ext
+[0.749s] Creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada-gustavo.egg-link (link to .)
+[0.750s] Installing ponderada_gustavo script to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/ponderada_gustavo
+[0.750s] 
+[0.750s] Installed /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo
+[0.750s] running symlink_data
+[0.751s] symbolically linking /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/resource/ponderada_gustavo -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index/resource_index/packages
+[0.751s] symbolically linking /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/package.xml -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ponderada_gustavo
+[0.779s] Invoked command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo' returned '0': PYTHONPATH=/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/prefix_override:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build --no-deps symlink_data --force

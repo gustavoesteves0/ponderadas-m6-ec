@@ -1,0 +1,9 @@
+[0.187s] Invoking command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo:/opt/ros/humble /usr/bin/cmake --build /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim -- -j8 -l8
+[0.227s] failed to create symbolic link '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/ament_cmake_python/turtlesim/turtlesim' because existing path cannot be removed: Is a directory
+[0.228s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_turtlesim.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_turtlesim] Error 1
+[0.228s] gmake[1]: *** [CMakeFiles/Makefile2:429: CMakeFiles/ament_cmake_python_symlink_turtlesim.dir/all] Error 2
+[0.228s] gmake[1]: *** Waiting for unfinished jobs....
+[0.230s] [ 10%] Built target turtlesim__rosidl_generator_c
+[0.230s] [ 11%] Built target turtlesim__cpp
+[0.232s] gmake: *** [Makefile:146: all] Error 2
+[0.234s] Invoked command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo:/opt/ros/humble /usr/bin/cmake --build /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim -- -j8 -l8

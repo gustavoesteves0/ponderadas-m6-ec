@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/ponderada_gustavo/ponderada_gustavo.egg-info
+writing ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/PKG-INFO
+writing dependency_links to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/dependency_links.txt
+writing entry points to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/entry_points.txt
+writing requirements to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/requires.txt
+writing top-level names to ../../build/ponderada_gustavo/ponderada_gustavo.egg-info/top_level.txt
+writing manifest file '../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt'
+reading manifest file '../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt'
+writing manifest file '../../build/ponderada_gustavo/ponderada_gustavo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo
+copying ponderada_gustavo/pond_gu.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo
+copying ponderada_gustavo/__init__.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo
+running install
+running install_lib
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo
+copying /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo/pond_gu.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo
+copying /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/build/lib/ponderada_gustavo/__init__.py -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo
+byte-compiling /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo/pond_gu.py to pond_gu.cpython-310.pyc
+byte-compiling /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index/resource_index
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index/resource_index/packages
+copying resource/ponderada_gustavo -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ament_index/resource_index/packages
+copying package.xml -> /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/share/ponderada_gustavo
+running install_egg_info
+Copying ../../build/ponderada_gustavo/ponderada_gustavo.egg-info to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/python3.10/site-packages/ponderada_gustavo-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pond_gu script to /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ponderada_gustavo/lib/ponderada_gustavo
+writing list of installed files to '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/ponderada_gustavo/install.log'

@@ -1,0 +1,6 @@
+source;share/ponderada_gustavo/hook/pythonpath.ps1
+source;share/ponderada_gustavo/hook/pythonpath.dsv
+source;share/ponderada_gustavo/hook/pythonpath.sh
+source;share/ponderada_gustavo/hook/ament_prefix_path.ps1
+source;share/ponderada_gustavo/hook/ament_prefix_path.dsv
+source;share/ponderada_gustavo/hook/ament_prefix_path.sh

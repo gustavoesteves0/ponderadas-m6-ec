@@ -1,0 +1,8 @@
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
+/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl

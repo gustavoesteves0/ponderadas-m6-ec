@@ -1,0 +1,17 @@
+running egg_info
+creating ../../build/ola_mundo/ola_mundo.egg-info
+writing ../../build/ola_mundo/ola_mundo.egg-info/PKG-INFO
+writing dependency_links to ../../build/ola_mundo/ola_mundo.egg-info/dependency_links.txt
+writing entry points to ../../build/ola_mundo/ola_mundo.egg-info/entry_points.txt
+writing requirements to ../../build/ola_mundo/ola_mundo.egg-info/requires.txt
+writing top-level names to ../../build/ola_mundo/ola_mundo.egg-info/top_level.txt
+writing manifest file '../../build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+reading manifest file '../../build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+writing manifest file '../../build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ola_mundo/share/ament_index
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ola_mundo/share/ament_index/resource_index
+creating /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/install/ola_mundo/share/ament_index/resource_index/packages
+error: can't copy 'resource/ola_mundo': doesn't exist or not a regular file

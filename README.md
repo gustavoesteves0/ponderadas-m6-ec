@@ -48,3 +48,5 @@ Por fim, para rodar o código, é necessário executar o seguinte comando:
 ```
 ros2 run ponderada_gustavo pond_gu
 ```
+## Vídeo
+Clique [aqui](https://www.youtube.com/watch?v=ei79bpjrxVk) para assistir o vídeo da execução do código.

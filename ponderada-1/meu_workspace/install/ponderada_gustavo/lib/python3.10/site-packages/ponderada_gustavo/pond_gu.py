@@ -12,7 +12,7 @@ class TurtleController(Node):
         self.publisher = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)  
         self.timer_period = 1
         self.side_count = 0 
-        self.max_sides = 4  #  para 4 para desenhar um triângulo
+        self.max_sides = 4  #  Definido como 4 para desenhar um triângulo
         self.circle_drawn = False  # Flag para indicar se o círculo já foi desenhado
 
         # Clientes e serviços
@@ -52,13 +52,14 @@ class TurtleController(Node):
 
     async def timer_callback(self):
         await self.set_pen_color(255, 165, 0)
-        if self.side_count < self.max_sides * 2:  # Desenha dois triângulos
+        if self.side_count < self.max_sides * 2:  
             if self.side_count % 3 == 0:
                 self.straight()  # Movimento linear em lados ímpares
             else:
                 self.curve()  # Curva em lados pares
             self.side_count += 1
         else:
+            print("Triangulo feito")
             if not self.circle_drawn:
                 # Desenho dos triângulos concluído, agora desenhamos um círculo dentro deles
                 time.sleep(1)  # Espere um pouco para garantir que a tartaruga termine o movimento linear
@@ -72,24 +73,17 @@ class TurtleController(Node):
                     time.sleep(dt)
                 self.circle_drawn = True
                 self.timer.cancel()  # Cancela o temporizador
+                print("Circulo feito")
+                await self.delete_turtle()
 
-    def spawn_circle(self, x, y, radius):
-        node = rclpy.create_node('spawn_circle')
-        client = node.create_client(Spawn, '/spawn')
-
-        request = Spawn.Request()
-        request.x = x
-        request.y = y
-        request.theta = 0.0
-        request.name = 'circle_turtle'
-
-        future = client.call_async(request)
-        rclpy.spin_until_future_complete(node, future)
-
-        if future.result() is not None:
-            print('Círculo criado')
-        else:
-            print('Falha ao criar círculo')
+    async def delete_turtle(self):
+        # Exclui a tartaruga
+        while not self.kill_client.wait_for_service(timeout_sec=1.0):
+            print('Kill service not available, waiting again...')
+        request = Kill.Request()
+        request.name = 'turtle1'
+        future = self.kill_client.call_async(request)
+        await future
 
 def main(args=None):
     rclpy.init(args=args)
@@ -98,6 +92,7 @@ def main(args=None):
     rclpy.spin(tc)
     tc.destroy_node()
     rclpy.shutdown()
+    time.sleep()
 
 if __name__ == "__main__":
     main()

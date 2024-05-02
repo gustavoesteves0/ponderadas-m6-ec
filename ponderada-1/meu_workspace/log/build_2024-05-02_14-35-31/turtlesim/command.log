@@ -1,0 +1,4 @@
+Invoking command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim -- -j8 -l8
+Invoked command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim -- -j8 -l8
+Invoking command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim
+Invoked command in '/home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gme2307/ponderadas-m6-ec/ponderada-1/meu_workspace/build/turtlesim

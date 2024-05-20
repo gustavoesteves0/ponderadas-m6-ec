@@ -1,0 +1,3 @@
+[console_scripts]
+semana_03 = semana_03.codigo:main
+

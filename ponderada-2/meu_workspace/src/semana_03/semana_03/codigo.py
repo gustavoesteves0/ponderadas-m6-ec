@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
@@ -31,7 +29,19 @@ class RobotControlNode(Node):
         self.listener.start()
 
         # Configurar o timer
-        self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
+        self.timer = self.create_timer(0.1, self.timer_callback)
+
+        # Limpa o terminal
+        self.clear_screen()
+
+        # Imprime a mensagem inicial
+        print("Aperte W para frente, S para trás, A para esquerda, D para direita, Q para sair.")
+
+    def clear_screen(self):
+        if os.name == 'nt':
+            os.system('cls')
+        else:
+            os.system('clear')
 
     def on_press(self, key):
         try:
@@ -45,6 +55,7 @@ class RobotControlNode(Node):
                 self.key_pressed = 'd'
             elif key.char == 'q':
                 self.stop_robot()
+                self.shutdown_robot()
         except AttributeError:
             pass
 
@@ -57,24 +68,27 @@ class RobotControlNode(Node):
         self.key_pressed = None
         self.linear_speed = 0.0
         self.angular_speed = 0.0
-        self.get_logger().info("Emergency stop activated!")
+        self.get_logger().info("Parada de emergência ativada!")
 
     def stop_robot_service(self, request, response):
         self.stop_robot()
         return response
 
     def shutdown_robot_service(self, request, response):
-        self.running = False
+        self.shutdown_robot()
         return response
+
+    def shutdown_robot(self):
+        self.running = False
+        self.get_logger().info("Desligando o robô...")
+        rclpy.shutdown()
 
     def timer_callback(self):
         if not self.running:
-            os._exit(0)
+            self.destroy_node()
+            return
 
-        # Limpa a linha anterior
-        sys.stdout.write("\033[K")
-
-        # Atualiza a linha com novos valores apenas se uma tecla estiver pressionada
+        # Atualiza as velocidades com base na tecla pressionada
         if self.key_pressed:
             if self.key_pressed == 'w':
                 self.linear_speed = 2.0
@@ -89,10 +103,11 @@ class RobotControlNode(Node):
             self.linear_speed = 0.0
             self.angular_speed = 0.0
 
-        sys.stdout.write(f"\rLinear Speed: {self.linear_speed}, Angular Speed: {self.angular_speed}")
+        # Imprime as velocidades atuais
+        sys.stdout.write(f"\rVelocidade linear: {self.linear_speed}, Velocidade angular: {self.angular_speed}")
         sys.stdout.flush()
 
-        # Publica a velocidade linear
+        # Publica a velocidade linear e angular
         msg = Twist()
         msg.linear.x = self.linear_speed
         msg.angular.z = self.angular_speed

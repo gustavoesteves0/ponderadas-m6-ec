@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robot Control</title>
+</head>
+<body>
+    <h1>Control Robot</h1>
+    <button onclick="sendCommand('/forward')">Forward</button>
+    <button onclick="sendCommand('/backward')">Backward</button>
+    <button onclick="sendCommand('/left')">Left</button>
+    <button onclick="sendCommand('/right')">Right</button>
+    <button onclick="sendCommand('/stop')">Stop</button>
+    <button onclick="sendCommand('/shutdown')">Shutdown</button>
+    
+    <h2>Latency Information</h2>
+    <p>Estimated Latency: <span id="latency">N/A</span> ms</p>
+    <img id="video_stream" src="/stream" alt="Video Stream">
+    
+    <script>
+        function sendCommand(command) {
+            fetch(command).then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            }).then(data => {
+                console.log(data);
+            }).catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+        }
+
+        function updateLatency() {
+            fetch('/latency').then(response => response.json())
+                .then(data => {
+                    document.getElementById('latency').textContent = (data.latency * 1000).toFixed(2);
+                })
+                .catch(error => {
+                    console.error('Error fetching latency:', error);
+                });
+        }
+
+        setInterval(updateLatency, 1000); // Update latency every second
+    </script>
+</body>
+</html>

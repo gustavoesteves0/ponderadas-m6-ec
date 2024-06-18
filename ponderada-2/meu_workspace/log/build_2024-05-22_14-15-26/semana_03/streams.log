@@ -1,0 +1,21 @@
+[0.845s] Invoking command in '/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/semana_03': PYTHONPATH=/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/prefix_override:/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/install/semana_03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/semana_03 build --build-base /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/build install --record /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/install.log --single-version-externally-managed install_data
+[1.021s] running egg_info
+[1.022s] writing ../../build/semana_03/semana_03.egg-info/PKG-INFO
+[1.022s] writing dependency_links to ../../build/semana_03/semana_03.egg-info/dependency_links.txt
+[1.022s] writing entry points to ../../build/semana_03/semana_03.egg-info/entry_points.txt
+[1.023s] writing requirements to ../../build/semana_03/semana_03.egg-info/requires.txt
+[1.023s] writing top-level names to ../../build/semana_03/semana_03.egg-info/top_level.txt
+[1.024s] reading manifest file '../../build/semana_03/semana_03.egg-info/SOURCES.txt'
+[1.027s] writing manifest file '../../build/semana_03/semana_03.egg-info/SOURCES.txt'
+[1.027s] running build
+[1.027s] running build_py
+[1.027s] running install
+[1.028s] running install_lib
+[1.028s] running install_data
+[1.029s] running install_egg_info
+[1.031s] removing '/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/install/semana_03/lib/python3.10/site-packages/semana_03-0.0.0-py3.10.egg-info' (and everything under it)
+[1.031s] Copying ../../build/semana_03/semana_03.egg-info to /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/install/semana_03/lib/python3.10/site-packages/semana_03-0.0.0-py3.10.egg-info
+[1.033s] running install_scripts
+[1.053s] Installing semana_03 script to /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/install/semana_03/lib/semana_03
+[1.053s] writing list of installed files to '/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/install.log'
+[1.070s] Invoked command in '/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/semana_03' returned '0': PYTHONPATH=/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/prefix_override:/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/install/semana_03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/semana_03 build --build-base /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/build install --record /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/build/semana_03/install.log --single-version-externally-managed install_data

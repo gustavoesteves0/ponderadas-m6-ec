@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/semana_03/semana_03.egg-info
+writing ../build/semana_03/semana_03.egg-info/PKG-INFO
+writing dependency_links to ../build/semana_03/semana_03.egg-info/dependency_links.txt
+writing entry points to ../build/semana_03/semana_03.egg-info/entry_points.txt
+writing requirements to ../build/semana_03/semana_03.egg-info/requires.txt
+writing top-level names to ../build/semana_03/semana_03.egg-info/top_level.txt
+writing manifest file '../build/semana_03/semana_03.egg-info/SOURCES.txt'
+reading manifest file '../build/semana_03/semana_03.egg-info/SOURCES.txt'
+writing manifest file '../build/semana_03/semana_03.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib/semana_03
+copying semana_03/__init__.py -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib/semana_03
+copying semana_03/codigo.py -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib/semana_03
+running install
+running install_lib
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03
+copying /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib/semana_03/__init__.py -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03
+copying /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/build/lib/semana_03/codigo.py -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03
+byte-compiling /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03/codigo.py to codigo.cpython-310.pyc
+running install_data
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/share/ament_index
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/share/ament_index/resource_index
+creating /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/share/ament_index/resource_index/packages
+copying resource/semana_03 -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/share/ament_index/resource_index/packages
+copying package.xml -> /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/share/semana_03
+running install_egg_info
+Copying ../build/semana_03/semana_03.egg-info to /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/python3.10/site-packages/semana_03-0.0.0-py3.10.egg-info
+running install_scripts
+Installing semana_03 script to /home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/install/semana_03/lib/semana_03
+writing list of installed files to '/home/gustavo/ponderadas-m6-ec/ponderada-2/meu_workspace/src/build/semana_03/install.log'

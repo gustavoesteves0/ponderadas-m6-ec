@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion MNIST API Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #imageInput {
+            display: none;
+        }
+        #imageDisplay {
+            width: 28px;
+            height: 28px;
+            image-rendering: pixelated;
+            border: 1px solid #000;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fashion MNIST API Interface</h1>
+    <button class="button" onclick="trainModel()">Train Model</button>
+    <button class="button" onclick="evaluateModel()">Evaluate Model</button>
+    <input type="file" id="imageInput" accept="image/*" onchange="loadImage(event)">
+    <button class="button" onclick="document.getElementById('imageInput').click()">Upload Image for Prediction</button>
+    <canvas id="imageDisplay" width="28" height="28"></canvas>
+    <button class="button" onclick="predict()">Predict</button>
+    <div id="output"></div>
+
+    <script>
+        const apiUrl = 'http://127.0.0.1:5000';
+
+        async function trainModel() {
+    try {
+        const response = await fetch(`${apiUrl}/train`, { method: 'POST' });
+        const data = await response.json();
+        console.log(data); // Log for debugging
+        document.getElementById('output').innerText = `Model trained in ${data.training_time.toFixed(2)} seconds.`;
+    } catch (error) {
+        console.error('Error:', error);
+        document.getElementById('output').innerText = 'Error training model.';
+    }
+}
+
+        async function evaluateModel() {
+            try {
+                const response = await fetch(`${apiUrl}/evaluate`);
+                const data = await response.json();
+                document.getElementById('output').innerText = `Test loss: ${data.test_loss}, Test accuracy: ${data.test_acc}`;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('output').innerText = 'Error evaluating model.';
+            }
+        }
+
+        let imageData;
+
+        function loadImage(event) {
+            const canvas = document.getElementById('imageDisplay');
+            const context = canvas.getContext('2d');
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const img = new Image();
+                img.onload = function() {
+                    context.clearRect(0, 0, canvas.width, canvas.height); // Clear previous image
+                    context.drawImage(img, 0, 0, 28, 28);
+                    const imageDataObj = context.getImageData(0, 0, 28, 28);
+                    imageData = Array.from(imageDataObj.data).filter((_, index) => index % 4 === 0);
+                    document.getElementById('output').innerText = 'Image loaded for prediction.';
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        async function predict() {
+            if (!imageData) {
+                document.getElementById('output').innerText = 'Please upload an image first.';
+                return;
+            }
+            const imageArray = Array.from(imageData).map(value => value / 255.0);
+            try {
+                const response = await fetch(`${apiUrl}/predict`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ image: imageArray })
+                });
+                const data = await response.json();
+                document.getElementById('output').innerText = `Prediction: ${data.predicted_class}`;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('output').innerText
+                = 'Error making prediction.';
+}
+}
+</script>
+</body>
+</html>
